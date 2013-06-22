@@ -21,7 +21,7 @@ module.exports = function (grunt) {
             simplex: {}, slate: {}, spacelab: {}, spruce: {}, superhero: {}, united: {}
         },
         "swatch": {
-            cosmo: {}, cerulean: {}, flatly: {}
+            cosmo: {}, cerulean: {}, flatly: {}, united: {}
         },
         clean: {
             build: {
