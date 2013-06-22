@@ -322,7 +322,8 @@ input[type="color"],
   }
 }
 
-.input-prepend.input-append {
+.input-prepend,
+.input-append {
 
   input,
   select,
@@ -350,6 +351,7 @@ input[type="color"],
   .add-on {
     padding: 9px 5px;
     text-shadow: none;
+    border: none;
   }
 }
 
@@ -393,12 +395,6 @@ textarea[readonly] {
 
 input[type="file"] {
   line-height: 16px;
-}
-
-.input-append .add-on,
-.input-prepend .add-on {
-  border: none;
-  background: none;
 }
 
 legend {
@@ -556,6 +552,15 @@ legend {
       border-radius: 0 0 4px 4px;
     }
   }
+
+  .input-append,
+  .input-prepend {
+
+    .add-on, .btn {
+      padding: 5px;
+    }
+  }
+
 }
 
 @media (max-width: 979px) {
