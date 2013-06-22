@@ -54,17 +54,25 @@ module.exports = function (grunt) {
 
         var concatSrc = 'global/build.scss',
             concatDest = theme + '/build.scss',
-            recessDest = '<%=builddir%>/' + theme + '/bootstrap.css',
-            recessSrc = [ theme + '/' + 'build.scss' ],
+            sassDest = '<%=builddir%>/' + theme + '/bootstrap.css',
+            sassSrc = [ theme + '/' + 'build.scss' ],
             dist = {src: concatSrc, dest: concatDest};
 
         grunt.config('concat.dist', dist);
-        var files = {};
-        files[recessDest] = recessSrc;
+
+        var files = {},
+            recessFiles = {};
+
+        files[sassDest] = sassSrc;
+        recessFiles[sassDest] = sassDest;
+
         grunt.config('sass.dist.files', files);
 
-        grunt.task.run(['concat', 'sass:dist', 'clean:build',
-            compress ? 'compress:' + recessDest + ':' + '<%=builddir%>/' + theme + '/bootstrap.min.css' : 'none']);
+        grunt.config('recess.dist.files', recessFiles);
+        grunt.config('recess.dist.options.compress', false);
+
+        grunt.task.run(['concat', 'sass:dist', 'recess:dist', 'clean:build',
+            compress ? 'compress:' + sassDest + ':' + '<%=builddir%>/' + theme + '/bootstrap.min.css' : 'none']);
     });
 
     grunt.registerTask('build-less', 'build a regular .less theme', function (theme, compress) {
@@ -123,18 +131,25 @@ module.exports = function (grunt) {
 
         var concatSrc = 'global/build-responsive.scss',
             concatDest = theme + '/build-responsive.scss',
-            recessDest = '<%=builddir%>/' + theme + '/bootstrap-responsive.css',
-            recessSrc = [ theme + '/' + 'build-responsive.scss' ],
+            sassDest = '<%=builddir%>/' + theme + '/bootstrap-responsive.css',
+            sassSrc = [ theme + '/' + 'build-responsive.scss' ],
             dist = {src: concatSrc, dest: concatDest};
 
         grunt.config('concat.dist', dist);
 
-        var files = {};
-        files[recessDest] = recessSrc;
+        var files = {},
+            recessFiles = {};
+
+        files[sassDest] = sassSrc;
+        recessFiles[sassDest] = sassDest;
+
         grunt.config('sass.dist.files', files);
 
-        grunt.task.run(['concat', 'sass:dist', 'clean:build',
-            compress ? 'compress:' + recessDest + ':' + '<%=builddir%>/' + theme + '/bootstrap-responsive.min.css' : 'none']);
+        grunt.config('recess.dist.files', recessFiles);
+        grunt.config('recess.dist.options.compress', false);
+
+        grunt.task.run(['concat', 'sass:dist', 'recess:dist', 'clean:build',
+            compress ? 'compress:' + sassDest + ':' + '<%=builddir%>/' + theme + '/bootstrap-responsive.min.css' : 'none']);
     });
 
     grunt.registerTask('compress', 'compress a generic css', function (fileSrc, fileDst) {
