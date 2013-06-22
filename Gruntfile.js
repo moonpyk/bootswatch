@@ -16,7 +16,7 @@ module.exports = function (grunt) {
                 ' * @link <%= pkg.homepage %>\n' +
                 ' * @license <%= pkg.license %>' + ' */'
         },
-        "swatch-less": {
+        swatch: {
             amelia: {},
             cerulean: {},
             cosmo: {},
@@ -31,16 +31,19 @@ module.exports = function (grunt) {
             superhero: {}, 
             united: {}
         },
-        "swatch": {
+        "swatch-less": {
+            amelia: {},
             cerulean: {},
             cosmo: {},
             cyborg: {},
             flatly: {},
             journal: {},
             readable: {},
+            simplex: {},
             slate: {},
             spacelab: {},
-            spruce:{},
+            spruce: {},
+            superhero: {},
             united: {}
         },
         clean: {
