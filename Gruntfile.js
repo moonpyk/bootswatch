@@ -34,6 +34,7 @@ module.exports = function (grunt) {
         "swatch": {
             cerulean: {},
             cosmo: {},
+            cyborg: {},
             flatly: {},
             slate: {},
             spancelab: {},
