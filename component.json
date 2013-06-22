@@ -1,15 +1,15 @@
 {
-	"name": "bootswatch",
-	"description": "Bootswatch is a collection of themes for Bootstrap.",
+	"name": "bootswatch.scss",
+	"description": "Bootswatch.scss is a collection of themes for SASS Twitter Bootstrap.",
 	"version": "2.3.2",
-	"author": "Thomas Park",
-	"homepage": "http://bootswatch.com",
+	"author": "Clément Bourgeois, Thomas Park",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/thomaspark/bootswatch.git"
+		"url": "git://github.com/moonpyk/bootswatch.scss"
 	},
 	"dependencies": {
-		"bootstrap": "~2.3.2"
+		"bootstrap": "~2.3.2",
+        "bootstrap-sass": "~2.3.2"
 	},
 	"licenses": [
 		{
