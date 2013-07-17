@@ -572,10 +572,6 @@ label {
   border: none;
   color: $textColor;
   text-shadow: none;
-
-  a {
-    color: lighten($orange, 12%);
-  }
 }
 
 .alert .alert-heading {
