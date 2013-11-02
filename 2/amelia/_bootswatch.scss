@@ -38,6 +38,22 @@ blockquote {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.text-warning {
+  color: lighten($yellow, 30%);
+}
+
+.text-error {
+  color: lighten($orange, 30%);
+}
+
+.text-success {
+  color: lighten($green, 30%);
+}
+
+.text-info {
+  color: lighten($blue, 30%);
+}
+
 // SCAFFOLDING
 // -----------------------------------------------------
 
