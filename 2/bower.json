@@ -9,7 +9,8 @@
 		"url": "git://github.com/thomaspark/bootswatch.git"
 	},
 	"dependencies": {
-		"bootstrap": "~2.3.2"
+		"bootstrap": "~2.3.2",
+        "sass-bootstrap": "~2.3.2"
 	},
 	"licenses": [
 		{

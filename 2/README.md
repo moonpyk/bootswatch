@@ -1,12 +1,8 @@
 Bootswatch.scss
 ===============
 
-<<<<<<< HEAD
-Bootswatch is a collection of free themes for [Twitter Bootstrap](http://twitter.github.com/bootstrap/). Check it out at [bootswatch.com](http://bootswatch.com).
-This fork aims to provide SCSS conversion for [SASS Twitter Bootstrap](https://github.com/jlong/sass-twitter-bootstrap) of all the themes.
-=======
 Bootswatch is a collection of free themes for [Bootstrap](http://getbootstrap.com/2.3.2/). Check it out at [bootswatch.com](http://bootswatch.com).
->>>>>>> b97fac3fa161f48f49a30e14d38bb9bf0c97a90a
+This fork aims to provide SCSS conversion for [SASS Twitter Bootstrap](https://github.com/jlong/sass-twitter-bootstrap) of all the themes.
 
 Usage
 -----
@@ -20,11 +16,7 @@ Customization
 ------
 Bootswatch is an open source project, and you’re welcome to modify the themes further. If you’re interested, fork or follow the GitHub repository. The files of interest are in the `scss-convert` branch.
 
-<<<<<<< HEAD
-Each raw theme consists of two SCSS files. One is `_variables.scss`, which is included by default in SASS Twitter Bootstrap and allows you to customize [these settings](http://twitter.github.io/bootstrap/customize.html#variables). The other is called `_bootswatch.scss` and introduces more extensive structural changes.
-=======
-Each raw theme consists of two LESS files. One is `variables.less`, which is included by default in Bootstrap and allows you to customize [these settings](http://getbootstrap.com/2.3.2/customize.html#variables). The other is called `bootswatch.less` and introduces more extensive structural changes.
->>>>>>> b97fac3fa161f48f49a30e14d38bb9bf0c97a90a
+Each raw theme consists of two SCSS files. One is `_variables.scss`, which is included by default in SASS Bootstrap and allows you to customize [these settings](http://getbootstrap.com/2.3.2/customize.html#variable). The other is called `_bootswatch.scss` and introduces more extensive structural changes.
 
 Check out the README in the [swatchmaker directory](https://github.com/thomaspark/bootswatch/tree/master/swatchmaker) for step-by-step instructions on building your own swatch.
 
