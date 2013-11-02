@@ -1,7 +1,6 @@
 // United 3.0.1
 // Bootswatch
 // -----------------------------------------------------
-
 @import url("//fonts.googleapis.com/css?family=Ubuntu");
 
 // Navbar =====================================================================
@@ -17,11 +16,10 @@
 // Navs =======================================================================
 
 .pagination {
-
-	.active > a,
-	.active > a:hover {
-		border-color: #ddd;
-	}
+  .active > a,
+  .active > a:hover {
+    border-color: #ddd;
+  }
 }
 
 // Indicators =================================================================

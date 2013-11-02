@@ -15,37 +15,36 @@
 // Navbar =====================================================================
 
 .navbar {
-
   @include btn-shadow($navbar-default-bg);
   border: 1px solid rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
-  & -inverse {
-    @include btn-shadow($navbar-inverse-bg);
-  }
-
-  & -nav > li > a {
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-
-    &:hover {
-      @include btn-shadow-inverse($navbar-default-bg);
-      border-left-color: transparent;
-    }
-  }
-
   .nav .open > a {
     border-color: transparent;
   }
+}
 
-  & -nav > li.active > a {
+.navbar-inverse {
+  @include btn-shadow($navbar-inverse-bg);
+}
+
+.navbar-nav > li > a {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    @include btn-shadow-inverse($navbar-default-bg);
     border-left-color: transparent;
   }
+}
 
-  & -form {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+.navbar-nav > li.active > a {
+  border-left-color: transparent;
+}
+
+.navbar-form {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 // Buttons ====================================================================
@@ -133,23 +132,21 @@ h1, h2, h3, h4, h5, h6 {
 // Tables =====================================================================
 
 .table {
-
   tr.success,
   tr.warning,
   tr.danger {
     color: #fff;
   }
+}
 
-  & -bordered tbody {
+.table-bordered tbody {
+  tr.success,
+  tr.warning,
+  tr.danger {
 
-    tr.success,
-    tr.warning,
-    tr.danger {
-
-      td,
-      &:hover td {
-        border-color: $table-border-color;
-      }
+    td,
+    &:hover td {
+      border-color: $table-border-color;
     }
   }
 }
@@ -209,7 +206,6 @@ legend {
 // Navs =======================================================================
 
 .nav {
-
   .open > a,
   .open > a:hover,
   .open > a:focus {
@@ -219,7 +215,6 @@ legend {
 }
 
 .nav-pills {
-
   & > li > a {
     @include btn-shadow($btn-default-bg);
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -245,7 +240,6 @@ legend {
 }
 
 .pagination {
-
   & > li > a {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     @include btn-shadow($btn-default-bg);
@@ -296,7 +290,6 @@ legend {
 // Indicators =================================================================
 
 .alert {
-
   .alert-link,
   a {
     color: #fff;
@@ -321,7 +314,6 @@ legend {
 .panel-danger,
 .panel-warning,
 .panel-info {
-
   .panel-heading {
     border-color: #000;
   }

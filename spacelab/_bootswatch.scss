@@ -12,26 +12,8 @@
 // Navbar =====================================================================
 
 .navbar {
-
   @include btn-shadow($navbar-default-bg);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-
-  & -inverse {
-    @include btn-shadow($navbar-inverse-bg);
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-  }
-
-  & -nav > li > a,
-  & -nav > li > a:hover {
-    padding-top: $navbar-padding-vertical + 2px;
-    padding-bottom: $navbar-padding-vertical - 2px;
-    @include transition(color ease-in-out .2s);
-  }
-
-  & -brand,
-  & -brand:hover {
-    @include transition(color ease-in-out .2s);
-  }
 
   .caret,
   .caret:hover {
@@ -41,6 +23,23 @@
   .dropdown-menu {
     text-shadow: none;
   }
+}
+
+.navbar-inverse {
+  @include btn-shadow($navbar-inverse-bg);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav > li > a,
+.navbar-nav > li > a:hover {
+  padding-top: $navbar-padding-vertical + 2px;
+  padding-bottom: $navbar-padding-vertical - 2px;
+  @include transition(color ease-in-out .2s);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  @include transition(color ease-in-out .2s);
 }
 
 // Buttons ====================================================================
@@ -88,7 +87,6 @@
 // Navs =======================================================================
 
 .pagination {
-
   .active > a,
   .active > a:hover {
     border-color: #ddd;
