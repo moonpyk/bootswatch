@@ -230,19 +230,19 @@ $heroUnitLeadColor:               inherit !default;
 // Form states and alerts
 // -------------------------
 $warningText:             $yellow !default;
-$warningBackground:       desaturate(lighten($yellow,45%),30%) !default;
+$warningBackground:       $yellow !default;
 $warningBorder:           transparent !default;
 
 $errorText:               $red !default;
-$errorBackground:         desaturate(lighten($red,45%),30%) !default;
+$errorBackground:         $red !default;
 $errorBorder:             transparent !default;
 
 $successText:             $green !default;
-$successBackground:       desaturate(lighten($green,45%),30%) !default;
+$successBackground:       $green !default;
 $successBorder:           transparent !default;
 
 $infoText:                $blue !default;
-$infoBackground:          desaturate(lighten($blue,43%),30%) !default;
+$infoBackground:          $blue !default;
 $infoBorder:              transparent !default;
 
 

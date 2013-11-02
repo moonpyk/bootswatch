@@ -462,6 +462,12 @@ legend, label {
     background-color: $blue;
     color: $white;
   }
+
+  tbody tr.warning td {
+    background-color: $orange;
+    color: $white;
+  }
+
 }
 
 // DROPDOWNS

@@ -263,6 +263,16 @@ div.subnav-fixed {
 // TABLES
 // -----------------------------------------------------
 
+.table tbody tr {
+  &.success > td,
+  &.error > td,
+  &.warning > td,
+  &.info > td {
+    color: $white;
+  }
+}
+
+
 // FORMS
 // --------------------------------------------------
 
